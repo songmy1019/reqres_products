@@ -31,6 +31,6 @@ phases:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$CODEBUILD_RESOLVED_SOURCE_VERSION
 
 
-#cache:
-#  paths:
-#    - '/root/.m2/**/*'
+cache:
+  paths:
+    - '/root/.m2/**/*'
